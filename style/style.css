@@ -85,6 +85,7 @@ h1{
     grid-area: aside;
     width: 100%;
     margin-right: 10px;
+    
 }
 footer{
     background-color:#ffeeff ;
@@ -167,6 +168,8 @@ input:focus{
 }
 .tamanioCarousel{
     width: 70%;
+    margin: auto;
+    ;
 }
 .colorBoton{
     background-color:#868686
@@ -204,10 +207,14 @@ input:focus{
 }
 .tamanioFotoEquipo{
     width: 65%;
+    margin: auto;
 }
 .colorBotonContacto{
     background-color:gray;
 }
 .colorBotonContacto:hover{
     background-color:#c48b9f;
+}
+.alineacionCard{
+    margin:auto
 }
