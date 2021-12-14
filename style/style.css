@@ -92,9 +92,9 @@ h1{
     transition: background-color, 2s;
     padding-bottom: 10px;
     margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     align-items: stretch;
     color:#757575 ;
 
@@ -140,8 +140,9 @@ h1{
 }
 .card{
     background-color:#ffeeff ;
-    font-family: 'Quattrocento', serif;
+    font-family:'Josefin Sans', sans-serif; ;
     color: #757575;
+font-size: 20px;
    
 }
 .form-check-input:checked {
@@ -208,8 +209,8 @@ input:focus{
 }
 /*contacto */
 .pageContacto{
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -373,7 +374,10 @@ input:focus{
     text-align: center;
 }
 
-
+/*SOBRE MI*/
+.sectionSobremi{
+    margin-top: 50px;
+}
 
 
 .colorBotonTienda{
@@ -689,7 +693,8 @@ input:focus{
     .tamanioLogoPrincipal{
         width: 80%;
     }
-    }
+    
+}
 
     
 
