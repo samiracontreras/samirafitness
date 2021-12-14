@@ -20,19 +20,25 @@ html{
     
 /*INDEX*/
 .section1{
-    background-color: #fce4ec;
+    background-color:  #fbf4f4;
     grid-area: section1;
     margin-bottom: 1px;
     transition: background-color, 2s;
     font-size: 15px;
-    height: 300px;
+    height: 600px;
     color:#757575 ;
-    margin-top: 50px;
+    margin-top: 1px;
+   
+    
     
     
     
     
 }   
+.tamanioLogoPrincipal{
+    width: 500px;
+    margin:auto;
+}
 .botonIndex{
     background-color:#c48b9f;
     border-color:#c48b9f ;
@@ -342,6 +348,8 @@ input:focus{
     text-align: center;
 }
 .section4_Tienda{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     margin-left: 50px;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -382,9 +390,19 @@ input:focus{
         height: 16px;
     }
     .section1{
-        height: 200px;
-        margin-top: 50px;
+        
+        height: 800px;
+        margin-top: 1px;
+        font-size: 8px;
+        margin-bottom: 50px;
+        background-color:#fbf4f4 ;
+
     }
+    .tamanioLogoPrincipal{
+        width: 80%;
+    }
+    
+    
    .section2{
        display: flex;
        flex-direction: column;
@@ -467,7 +485,7 @@ input:focus{
 @media screen and ( max-width:1024px){
     .section1{
         height: 200px;
-        margin-top: 50px;
+        margin-top: 1px;
     }
    .section2{
        display: flex;
@@ -551,7 +569,7 @@ input:focus{
 @media screen and ( max-width:760px){
     .section1{
         height: 200px;
-        margin-top: 50px;
+        margin-top: 1px;
     }
    .section2{
        display: flex;
@@ -640,5 +658,5 @@ input:focus{
 
 }
     
-/*SOBRE MI */
+
 
