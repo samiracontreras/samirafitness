@@ -200,7 +200,7 @@ input:focus{
 .animacion{
     animation-name: animacion;
     animation-iteration-count: 1;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 @keyframes animacion{
     50%{
