@@ -1,6 +1,3 @@
-
-@import 'variables.scss';
-
 *{
     margin: 0;
     padding: 0;
@@ -9,43 +6,49 @@
 
 html{
     font-size: 18px;
-    font-family: 'Quattrocento', serif;
+    font-family: $letraPrincipal;
     background-color: $colorPrincipal ;
-    color: $colorLetras;
+    color:$colorLetras;
     
     
 }
 .colorFondoIndex{
-    background-color:$colorPrincipal ;
+    background-color:$colorPrincipal;
+}
+.fuenteNav{
+    font-family:$letraPrincipal 
 }
 
 
     
 /*INDEX*/
 .section1{
-    background-color: $colorPrincipal;
+    background-color:  #fbf4f4;
     grid-area: section1;
     margin-bottom: 1px;
     transition: background-color, 2s;
     font-size: 15px;
-    height: 300px;
-    color:$colorLetras ;
-    margin-top: 50px;
+    height: 600px;
+    color:$colorLetras;
+    margin-top: 1px;
+   
     
     
     
     
     
 }   
+.tamanioLogoPrincipal{
+    width: 500px;
+    margin:auto;
+}
 .botonIndex{
-    background-color:#c48b9f;
-    border-color:#c48b9f ;
+    background-color:$colorPrincipalBotones;
+    border-color:$colorPrincipalBotones ;
 }
 .botonIndex:hover{
-    background-color:gray;
-    border-color: gray;
-    
-    
+    background-color:$colorSecundarioBotones;
+    border-color: $colorSecundarioBotones;
 
 
 } 
@@ -59,7 +62,7 @@ h1{
     background-color:$colorPrincipal;
     text-align: center;
     grid-template-columns: 30% 70%;
-    color: $colorLetras;
+    color:$colorLetras;
     
  
     
@@ -88,14 +91,15 @@ h1{
     margin-left: 5px;
     transition: background-color, 2s;
     padding-bottom: 10px;
-    margin-top: 150px;
-    align-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    align-items: stretch;
     color:$colorLetras ;
-   
-    
+
 
 }    
-
 
 
     
@@ -120,7 +124,7 @@ h1{
     grid-template-rows:  450px;
     margin-top: 1px;
     
-    color: $colorLetras ;
+    color:#757575 ;
     
     
 }
@@ -129,20 +133,24 @@ h1{
     text-align: center;
     color:$colorLetras ;
     height: 100px;
-    margin-top: 50px ;
+    margin-top: 40px ;
 }
 .marginCard{
     margin-left: 50px;
 }
 .card{
     background-color:#ffeeff ;
-    font-family: 'Quattrocento', serif;
+    font-family:'Josefin Sans', sans-serif; ;
     color: $colorLetras;
-    
+font-size: 20px;
    
 }
+.form-check-input:checked {
+    background-color: $colorSecundarioBotones;
+    border-color: $colorPrincipalBotones;
+}
 footer{
-    background-color:$colorSecundario;
+    background-color:#c9b2ba;
     display:grid;
     grid-template-columns: repeat(6,8%);
     
@@ -158,14 +166,12 @@ img{
 .imgFooter{
     width: 25%;
 }
-.videoAside{
-    width: 100%;
-}
+
+
 .contacto{
     background-color: $colorPrincipal;
     
 }
-
 .alineacion{
     text-align: center;
     color: #918989;
@@ -176,14 +182,14 @@ img{
 
 html{
     font-size: 62,5%;
-    font-family:'Trirong', serif;
+    font-family: $letraPrincipal;
 }
 h1{
     font-size: 30px;
 }
 
 .container{
-    color:$colorLetras ;
+    color:$colorLetras;
 }
 
 
@@ -199,6 +205,13 @@ input:focus{
     50%{
         font-size: 20px
     }
+}
+/*contacto */
+.pageContacto{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .seccionContacto{
@@ -235,8 +248,8 @@ input:focus{
     border-color: $colorSecundarioBotones;
 }
 .colorBotonContacto:hover{
-    background-color: $colorPrincipalBotones;
-    border-color: $colorPrincipalBotones ;
+    background-color:$colorPrincipalBotones;
+    border-color:$colorPrincipalBotones;
 
 }
 .alineacionCard{
@@ -306,7 +319,7 @@ input:focus{
     text-align: center;
 }  
 .colorBotonServ{
-    background-color: $colorSecundarioBotones;
+    background-color:$colorSecundarioBotones;
     border-color: $colorSecundarioBotones;
 
 }
@@ -315,8 +328,8 @@ input:focus{
     border-color:$colorPrincipalBotones ;
 }
 .colorBotonServicios{
-    background-color: $colorPrincipalBotones;
-    border-color:$colorPrincipalBotones ;
+    background-color:$colorPrincipalBotones;
+    border-color:$colorPrincipalBotones;
 }
 .colorBotonServicios:hover{
     background-color:$colorSecundarioBotones;
@@ -332,14 +345,14 @@ input:focus{
 .section1_Tienda{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     text-align: center;
 }
 .section2_Tienda{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     text-align: center;
     
@@ -347,18 +360,24 @@ input:focus{
 .section3_Tienda{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     text-align: center;
 }
 .section4_Tienda{
-    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 10px;
     margin-bottom: 50px;
     margin-top: 50px;
     text-align: center;
 }
 
 
+/*SOBRE MI*/
+.sectionSobremi{
+    margin-top: 50px;
+}
 
 
 .colorBotonTienda{
@@ -366,7 +385,7 @@ input:focus{
     border-color:$colorPrincipalBotones ;
 }
 .colorBotonTienda:hover{
-    background-color: $colorSecundarioBotones;
+    background-color:$colorSecundarioBotones;
     border-color: $colorSecundarioBotones;
 }
 
@@ -374,19 +393,13 @@ input:focus{
 @media screen and (max-width:576px){
     .footerRedes .imgFooter{
         width: 25px;
-        display: grid;
-        grid-template-columns: 50% 50% 50% 50% 50% 50%;
         
         
     }
     
     
 }
-@media screen and (max-width:768px){
-    .footerRedes .imgFooter{
-        width: 25px;
-    }
-}
+
 /*MEDIA QUERIES */
 @media screen and (max-width:320px){
     .carritoNavBar{
@@ -394,17 +407,31 @@ input:focus{
         height: 16px;
     }
     .section1{
-        height: 200px;
+        
+        height: 600px;
+        margin-top: 1px;
+        font-size: 8px;
+        margin-bottom: 150px;
+        background-color:#fbf4f4 ;
         margin-top: 50px;
+
     }
+    .tamanioLogoPrincipal{
+        width: 80%;
+    }
+    
+    
    .section2{
        display: flex;
        flex-direction: column;
+       font-size: 16px;
+       height: 600px;
        
    }
+   
    .ajusteImagenCarrusel{
-       width: 400px;
-       height: 282px;
+       width: 200px;
+       height: 50px;
    }
    .tamanioCarousel{
        width: 60%;
@@ -421,6 +448,11 @@ input:focus{
        margin-left: 10px;
        width:5rem ;
        
+   }
+   .cardTienda{
+      
+       margin-bottom: 40px;
+       margin-top: 40px;
    }
    .sectionUnoServicios{
        display: flex;
@@ -458,29 +490,43 @@ input:focus{
     .section1_Tienda{
         display: flex;
         flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .section2_Tienda{
         display: flex;
         flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .section3_Tienda{
         display: flex;
         flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .section4_Tienda{
         display: flex;
         flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .cardTienda{
         width: 8rem;
-        margin:auto
     }
 
 }
 @media screen and ( max-width:1024px){
     .section1{
-        height: 200px;
-        margin-top: 50px;
+        height: 600px;
+        margin-top: 1px;
+    }
+    .marginCardMovile{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width:5rem ;
+        margin:auto
+        
     }
    .section2{
        display: flex;
@@ -499,15 +545,7 @@ input:focus{
        display: flex;
        flex-direction: column;
    }
-   .marginCardMovile{
-       margin-top: 10px;
-       margin-bottom: 10px;
-       
-       width:5rem ;
-       margin:auto
-       
-       
-   }
+   
    .sectionUnoServicios{
        display: flex;
        flex-direction: column;
@@ -544,6 +582,7 @@ input:focus{
     .section1_Tienda{
         display: flex;
         flex-direction: column;
+       
         
     }
     .section2_Tienda{
@@ -558,14 +597,23 @@ input:focus{
         display: flex;
         flex-direction: column;
     }
+    .cardTienda{
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+       
+    }
 
 
 }
 @media screen and ( max-width:760px){
     .section1{
-        height: 200px;
-        margin-top: 50px;
+        
+        height: 600px;
+        margin-top: 1px;
+        margin-bottom: 50px;
     }
+    
    .section2{
        display: flex;
        flex-direction: column;
@@ -576,7 +624,7 @@ input:focus{
        height: 250px;
    }
    .tamanioCarousel{
-       width: 60%;
+       width: 15rem;
        
    }
    .aside{
@@ -584,14 +632,21 @@ input:focus{
        flex-direction: column;
    }
    .marginCardMovile{
+       margin:auto;
        margin-top: 10px;
        margin-bottom: 10px;
        
        width:5rem ;
-       margin:auto
+     
        
        
    }
+   .cardTienda{
+       
+      
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
    .sectionUnoServicios{
        display: flex;
        flex-direction: column;
@@ -649,9 +704,36 @@ input:focus{
        margin-top: 50px;
        margin-bottom: 50px;
     }
-
-
-}
+    .footerRedes .imgFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 25px;
+    } 
     
 
+}
+@media screen and ( max-width:576px){
+   
+    .section1{
+        
+            height: 550px;
+            margin-top: 1px;
+        }
+    .tamanioLogoPrincipal{
+        width: 80%;
+    }
+    .cardTienda{
+       
+        margin-bottom: 40px;
+        margin-top: 40px;
+       
+    }
+    .marginCardMovile{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+
+    
 

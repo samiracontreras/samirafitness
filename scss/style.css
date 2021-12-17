@@ -6,7 +6,7 @@
 
 html {
   font-size: 18px;
-  font-family: "Quattrocento", serif;
+  font-family: "Josefin Sans", sans-serif;
   background-color: #fce4ec;
   color: #757575;
 }
@@ -15,16 +15,25 @@ html {
   background-color: #fce4ec;
 }
 
+.fuenteNav {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 /*INDEX*/
 .section1 {
-  background-color: #fce4ec;
+  background-color: #fbf4f4;
   grid-area: section1;
   margin-bottom: 1px;
   transition: background-color, 2s;
   font-size: 15px;
-  height: 300px;
+  height: 600px;
   color: #757575;
-  margin-top: 50px;
+  margin-top: 1px;
+}
+
+.tamanioLogoPrincipal {
+  width: 500px;
+  margin: auto;
 }
 
 .botonIndex {
@@ -65,10 +74,12 @@ h1 {
   margin-left: 5px;
   transition: background-color, 2s;
   padding-bottom: 10px;
-  margin-top: 5px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
   align-items: stretch;
   color: #757575;
-  
 }
 
 .imagenArticle {
@@ -93,7 +104,7 @@ h1 {
   text-align: center;
   color: #757575;
   height: 100px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .marginCard {
@@ -102,8 +113,14 @@ h1 {
 
 .card {
   background-color: #ffeeff;
-  font-family: "Quattrocento", serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #757575;
+  font-size: 20px;
+}
+
+.form-check-input:checked {
+  background-color: gray;
+  border-color: #c48b9f;
 }
 
 footer {
@@ -126,10 +143,6 @@ img {
   width: 25%;
 }
 
-.videoAside {
-  width: 100%;
-}
-
 .contacto {
   background-color: #fce4ec;
 }
@@ -141,7 +154,7 @@ img {
 
 html {
   font-size: 62, 5%;
-  font-family: "Trirong", serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h1 {
@@ -176,6 +189,14 @@ input:focus {
     font-size: 20px;
   }
 }
+/*contacto */
+.pageContacto {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .seccionContacto {
   width: 100%;
   background-color: #d7ccc8;
@@ -321,7 +342,7 @@ input:focus {
 .section1_Tienda {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 50px;
+  margin-left: 10px;
   margin-top: 50px;
   text-align: center;
 }
@@ -329,7 +350,7 @@ input:focus {
 .section2_Tienda {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 50px;
+  margin-left: 10px;
   margin-top: 50px;
   text-align: center;
 }
@@ -337,16 +358,23 @@ input:focus {
 .section3_Tienda {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 50px;
+  margin-left: 10px;
   margin-top: 50px;
   text-align: center;
 }
 
 .section4_Tienda {
-  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 10px;
   margin-bottom: 50px;
   margin-top: 50px;
   text-align: center;
+}
+
+/*SOBRE MI*/
+.sectionSobremi {
+  margin-top: 50px;
 }
 
 .colorBotonTienda {
@@ -365,11 +393,6 @@ input:focus {
     width: 25px;
   }
 }
-@media screen and (max-width: 768px) {
-  .footerRedes .imgFooter {
-    width: 25px;
-  }
-}
 /*MEDIA QUERIES */
 @media screen and (max-width: 320px) {
   .carritoNavBar {
@@ -378,13 +401,23 @@ input:focus {
   }
 
   .section1 {
-    height: 200px;
+    height: 600px;
+    margin-top: 1px;
+    font-size: 8px;
+    margin-bottom: 150px;
+    background-color: #fbf4f4;
     margin-top: 50px;
+  }
+
+  .tamanioLogoPrincipal {
+    width: 80%;
   }
 
   .section2 {
     display: flex;
     flex-direction: column;
+    font-size: 16px;
+    height: 600px;
   }
 
   .ajusteImagenCarrusel {
@@ -407,6 +440,115 @@ input:focus {
     margin-right: 10px;
     margin-left: 10px;
     width: 5rem;
+  }
+
+  .cardTienda {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .sectionUnoServicios {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .sectionDosServicios {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .sectionTresServicios {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .sectionCuatroServicios {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .sectionCincoServicios {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .sectionSeisServicios {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .mediaServicios {
+    display: none;
+  }
+
+  .section1_Tienda {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .section2_Tienda {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .section3_Tienda {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .section4_Tienda {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .cardTienda {
+    width: 8rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section1 {
+    height: 600px;
+    margin-top: 1px;
+  }
+
+  .marginCardMovile {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 5rem;
+    margin: auto;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ajusteImagenCarrusel {
+    width: 600px;
+    height: 400px;
+  }
+
+  .tamanioCarousel {
+    width: 60%;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
   }
 
   .sectionUnoServicios {
@@ -470,105 +612,16 @@ input:focus {
   }
 
   .cardTienda {
-    width: 8rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .section1 {
-    height: 200px;
-    margin-top: 50px;
-  }
-
-  .section2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ajusteImagenCarrusel {
-    width: 600px;
-    height: 400px;
-  }
-
-  .tamanioCarousel {
-    width: 60%;
-  }
-
-  .aside {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .marginCardMovile {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 5rem;
     margin: auto;
-  }
-
-  .sectionUnoServicios {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .sectionDosServicios {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .sectionTresServicios {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .sectionCuatroServicios {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .sectionCincoServicios {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .sectionSeisServicios {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .mediaServicios {
-    display: none;
-  }
-
-  .section1_Tienda {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section2_Tienda {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section3_Tienda {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section4_Tienda {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 760px) {
   .section1 {
-    height: 200px;
-    margin-top: 50px;
+    height: 600px;
+    margin-top: 1px;
+    margin-bottom: 50px;
   }
 
   .section2 {
@@ -582,7 +635,7 @@ input:focus {
   }
 
   .tamanioCarousel {
-    width: 60%;
+    width: 15rem;
   }
 
   .aside {
@@ -591,10 +644,15 @@ input:focus {
   }
 
   .marginCardMovile {
+    margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 5rem;
-    margin: auto;
+  }
+
+  .cardTienda {
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .sectionUnoServicios {
@@ -663,5 +721,31 @@ input:focus {
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .footerRedes .imgFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section1 {
+    height: 550px;
+    margin-top: 1px;
+  }
+
+  .tamanioLogoPrincipal {
+    width: 80%;
+  }
+
+  .cardTienda {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .marginCardMovile {
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
