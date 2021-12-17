@@ -133,7 +133,7 @@ h1{
     text-align: center;
     color:#757575 ;
     height: 100px;
-    margin-top: 50px ;
+    margin-top: 40px ;
 }
 .marginCard{
     margin-left: 50px;
@@ -166,9 +166,8 @@ img{
 .imgFooter{
     width: 25%;
 }
-.videoAside{
-    width: 100%;
-}
+
+
 .contacto{
     background-color: #fce4ec;
     
@@ -346,14 +345,14 @@ input:focus{
 .section1_Tienda{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     text-align: center;
 }
 .section2_Tienda{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     text-align: center;
     
@@ -361,18 +360,19 @@ input:focus{
 .section3_Tienda{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     text-align: center;
 }
 .section4_Tienda{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 50px;
+    margin-left: 10px;
     margin-bottom: 50px;
     margin-top: 50px;
     text-align: center;
 }
+
 
 /*SOBRE MI*/
 .sectionSobremi{
@@ -413,6 +413,7 @@ input:focus{
         font-size: 8px;
         margin-bottom: 150px;
         background-color:#fbf4f4 ;
+        margin-top: 50px;
 
     }
     .tamanioLogoPrincipal{
@@ -449,6 +450,7 @@ input:focus{
        
    }
    .cardTienda{
+      
        margin-bottom: 40px;
        margin-top: 40px;
    }
@@ -519,6 +521,13 @@ input:focus{
         height: 600px;
         margin-top: 1px;
     }
+    .marginCardMovile{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width:5rem ;
+        margin:auto
+        
+    }
    .section2{
        display: flex;
        flex-direction: column;
@@ -536,15 +545,7 @@ input:focus{
        display: flex;
        flex-direction: column;
    }
-   .marginCardMovile{
-       margin-top: 10px;
-       margin-bottom: 10px;
-       
-       width:5rem ;
-       margin:auto
-       
-       
-   }
+   
    .sectionUnoServicios{
        display: flex;
        flex-direction: column;
@@ -581,6 +582,7 @@ input:focus{
     .section1_Tienda{
         display: flex;
         flex-direction: column;
+       
         
     }
     .section2_Tienda{
@@ -596,8 +598,10 @@ input:focus{
         flex-direction: column;
     }
     .cardTienda{
+        margin: auto;
         margin-bottom: 40px;
         margin-top: 40px;
+       
     }
 
 
@@ -605,10 +609,11 @@ input:focus{
 @media screen and ( max-width:760px){
     .section1{
         
-        height: 500px;
+        height: 600px;
         margin-top: 1px;
         margin-bottom: 50px;
     }
+    
    .section2{
        display: flex;
        flex-direction: column;
@@ -627,15 +632,18 @@ input:focus{
        flex-direction: column;
    }
    .marginCardMovile{
+       margin:auto;
        margin-top: 10px;
        margin-bottom: 10px;
        
        width:5rem ;
-       margin:auto
+     
        
        
    }
    .cardTienda{
+       
+      
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -705,19 +713,27 @@ input:focus{
 
 }
 @media screen and ( max-width:576px){
+   
     .section1{
         
-            height: 600px;
+            height: 550px;
             margin-top: 1px;
         }
     .tamanioLogoPrincipal{
         width: 80%;
     }
     .cardTienda{
+       
         margin-bottom: 40px;
         margin-top: 40px;
+       
+    }
+    .marginCardMovile{
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 }
+
 
     
 
